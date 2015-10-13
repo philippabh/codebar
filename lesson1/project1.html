@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Philippa's project</title>
+		<script src="project1.js"></script>
+	</head>
+	
+	<body>
+		<div>
+			<h1>Welcome to my Darts score tracker!</h1>
+			<p>Save yourself the hassle of calculating your score so you can focus more on your aim!</p>
+		</div>
+		<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Darts_in_a_dartboard.jpg/1280px-Darts_in_a_dartboard.jpg" alt="Dart Board" height="250" width="250" onclick="startGame()"/>
+		<h2 id="board">Click on the dart board to begin</h2>
+		<img id="dart1" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQC5D_pj1FULjOR6-Zjf9o42gn3-Yb2LoKl8DEDG2aehP9I00">
+		<img id="dart2" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQC5D_pj1FULjOR6-Zjf9o42gn3-Yb2LoKl8DEDG2aehP9I00">
+		<img id="dart3" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQC5D_pj1FULjOR6-Zjf9o42gn3-Yb2LoKl8DEDG2aehP9I00">
+		<h4 id="bustedMsg" style="color:red"> </h4>
+		<div id="doubleOutCheck" style="display:none">
+			<form name="doubleOutForm">
+					<label id="winQuestion"> </label>
+					<input type="button" name="doubleOut" onclick="doDoubleOut(true);" value="yes" />
+					<input type="button" name="doubleOut" onclick="doDoubleOut(false);" value="no" />
+			</form>
+		</div>
+		<h4 id="currentPlayer" style="color:blue">Player One's turn</h4>
+		<form name="scoreForm" onsubmit="return false";>
+			<p>Register your score from each throw here:
+				<input type="text" name="throwScore" maxlength="3" />
+				<input type="button" onclick="doTurn()" value="Register score"/>
+			</p>
+		</form>
+		<div>
+			<div>
+				<h4 id="player1name">Name: Player One</h4>
+				<p id="player1score">Score: 301</p>
+			</div>
+			<div>
+				<h4 id="player2name">Name: Player Two</h4>
+				<p id="player2score">Score: 301</p>
+			</div>
+	</body>
+
+
+
+</html>
